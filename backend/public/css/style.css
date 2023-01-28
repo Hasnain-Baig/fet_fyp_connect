@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+}
+
+@font-face {
+    font-family: "OpenSans";   /*Can be any text*/
+    src: local("OpenSans-Regular"),
+      url("/fonts/OpenSans-SemiBold.ttf") format("truetype");
+  }
+
+  .background-update-password{
+    font-family: OpenSans;
+    background-image:url('/images/login.jpg')  ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;   
+    background-attachment: fixed;
+    }
+
+    .background-signup-message{
+        font-family: OpenSans;
+        background-image:url('/images/login.jpg')  ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;   
+        background-attachment: fixed;
+        }
+        
+
+.form {
+    background: rgba(1, 29, 58, .8);
+    box-shadow: 7px 7px  40px #0000;
+    /* height: 85%; */
+  }

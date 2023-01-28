@@ -1,0 +1,523 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "OpenSans";   /*Can be any text*/
+  
+}
+a{
+    text-decoration: none;
+}
+
+.main-container{
+    display: flex;
+    color: black;
+}
+.main{
+    padding: 20px;
+}
+.sidebar{
+    background-color: #011D3A;
+    color: white;
+min-height: 100vh;
+max-height: max-content;
+    overflow: hidden;
+   
+}
+
+.top_section{
+    display: flex;
+    align-items: left;
+    padding: 15px 10px;
+    justify-content: left;
+}
+
+
+
+
+.Link{
+    display: flex;
+    color: white;
+    gap:10px ;
+    padding: 10px 15px;
+    margin-top:3px;
+    transition: 0.2s cubic-bezier(0.6,-0.28,0.735,0.045 ) ;
+    border-right: 4px solid transparent ;
+}
+.Link:hover{
+   color: white;
+    border-right: 4px solid white;
+    transition: 0.1s cubic-bezier(0.6,-0.28,0.735,0.045 ) ;
+    background-color:#0DA049;
+    
+}
+/* .active{
+    background-color:#0DA049 !important; 
+    border-radius: 10px !important;
+    padding: 5px;
+} */
+
+/* .active{
+    background-color:#0DA049 !important; 
+    border-radius: 10px !important;
+    padding: 5px;
+
+} */
+
+/* .active{
+    background-color:#0DA049 !important; 
+    border-right: 4px solid white!important;
+    padding: 5px !important;
+
+} */
+
+
+    
+
+
+.bg-primary-color{
+    background-color: #011D3A !important;
+}
+
+.text-primary-color{
+    color: white !important;
+}
+/* .texthover:hover{
+   color: white !important; 
+    background-color:#6ba482 !important; 
+    border-radius: 10px !important;
+} */
+
+
+/* .textactive:visited{
+    background-color:#0DA049 !important; 
+    border-radius: 10px !important;
+
+} */
+  
+  @font-face {
+    font-family: "OpenSans";   /*Can be any text*/
+    src: local("OpenSans-Regular"),
+      url("./fonts/OpenSans-SemiBold.ttf") format("truetype");
+  }
+
+
+
+  
+  /* Navbar */
+  .bg-primary-color{
+    background-color: #011D3A !important;
+  }
+  
+  .text-primary-color{
+    color: white !important;
+    font-family: OpenSans;
+    text-transform: uppercase;
+  }
+  .texthover:hover{
+   color: white !important; 
+    background-color:#3da568 !important; 
+    border-radius: 10px !important;
+  }
+  .textactive:active{
+    background-color:#0DA049 !important; 
+    border-radius: 10px !important;
+  
+  }
+  
+  .textactive:visited{
+    background-color:#0DA049 !important; 
+    border-radius: 10px !important;
+  
+  }
+  @media screen and (max-width:974px){
+    .navbar_icon{
+      display: flex;
+      flex-direction: column;
+    }
+    .icon_Navbar{
+      background-color: white !important;
+      color: white !important;
+    }
+  }
+  
+   /* Student Login */
+   .RegBackgorund {
+    font-family: OpenSans;
+    background-image:url(./images/registration2.jpg)  ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  
+    background-attachment: fixed;
+   }
+  
+   .loginBackgorund {
+    font-family: OpenSans;
+    background-image:url("./images/login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+   
+    background-attachment: fixed;
+   }
+  
+   .form {
+    background: rgba(1, 29, 58, .8);
+    box-shadow: 7px 7px  40px #0000;
+    /* height: 85%; */
+  }
+  
+  
+  /* Registration screen  */
+  .registrationForm{
+    background: rgba(1, 29, 58, .8);
+    box-shadow: 7px 7px  40px #011D3A;
+  }
+  
+  @media screen and (max-width: 470px) {
+    .departments{
+      display: flex;
+      flex-direction: column;
+    }
+    .telecomMargin{
+      margin-left: 4.2rem;
+    }
+  }
+  
+  /* Home SCreen  */
+  #home{
+    font-family: OpenSans;
+    overflow: hidden;
+
+  }
+  .text-FET{
+   color: #1f61a9
+  }
+  
+  #footer{
+    background-color: #011D3A;
+  
+  }
+  
+  @media screen and (max-width: 575px) {
+    .Logos{
+      display: none
+    }
+    
+  }
+  
+
+/* ADD FYP IDEAS */
+.bg-color-modal{
+    background: rgba(1, 29, 58, .8);
+    border-radius: 15px;
+
+}
+
+
+.btn-close{
+    background: rgba(1, 29, 58, .8);
+}
+
+/*side-body */
+.side-body{
+  /* background-color: red; */
+  height: 100%;
+    background-color: #f1f6fc;
+    margin: 0px;
+    padding: 10px;
+}
+
+
+
+/* fyp-idea-header */
+/* .fyp-idea-header{
+    background-color: #d2e2f5;
+    font-size: medium;
+    wifont-weight: bold;
+    padding: 10px;
+    text-align: center;
+    } */
+
+/* ------responsive table */
+table { 
+    width: 100%; 
+    border-collapse: separate; 
+  }
+  /* Zebra striping */
+  tr:nth-of-type(odd) { 
+    background: rgb(255, 255, 255); 
+    
+  }
+  th { 
+    background-color: #011D3A;;
+    color: white; 
+    font-weight: bold; 
+  }
+  td, th { 
+    padding: 6px; 
+    border: none;
+    text-align: center; 
+  }
+  
+  .p-button a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  @media screen and (max-width: 971px) {
+  
+      /* Force table to not be like tables anymore */
+      table, thead, tbody, th, td, tr { 
+          display: block; 
+      text-align: left;
+      
+      }
+      /* Hide table headers (but not display: none;, for accessibility) */
+     
+         
+      thead tr { 
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+      }
+      
+      tr { 
+margin-bottom: 10px;
+    }
+      
+      td { 
+          /* Behave  like a "row" */
+ /* background-color: red;    */
+ /* background-color: #011D3A; */
+ color: black;
+          border: none;
+          /* border-bottom: 1px solid #eee;  */
+          position: relative;
+          padding-left: 50%; 
+      }
+      
+      td:before { 
+        font-weight: bold;
+          /* Now like a table header */
+          position: absolute;
+ background-color: #011D3A;
+color: white;
+display: block;         
+ /* background-color: #0DA049; */
+ /* padding: 55px;    */
+          /* Top/left values mimic padding */
+      /* background-color: red; */
+          top: 6px;
+          left: 6px;
+          width: 45%; 
+          padding-right: 10px; 
+          padding: 5px;
+          /* white-space: nowrap; */
+      }
+      
+      /*
+      Label the data
+      */
+      td:nth-of-type(1):before { content: "ID:"; }
+      td:nth-of-type(2):before { content: "TITLE:"; }
+      td:nth-of-type(3):before { content: "TECHNOLOGY"; }
+      td:nth-of-type(4):before { content: "DESCRIPTION:"; }
+      td:nth-of-type(5):before { content: "TAKEN:"; }
+      td:nth-of-type(6):before { content: "GIVEN BY:"; }
+  
+      td.projectsummary:nth-of-type(1):before { content: "GROUP ID:"; }
+      td.projectsummary :nth-of-type(2):before { content: "PROJECT TITLE:"; }
+      td.projectsummary:nth-of-type(3):before { content: "DATE:"; }
+      td.projectsummary:nth-of-type(4):before { content: "STATUS:"; }
+      td.projectsummary:nth-of-type(5):before { content: "PROPOSAL:"; }
+      td.projectsummary:nth-of-type(6):before { content: "THESIS:"; }
+    
+      td.proposalsummary:nth-of-type(1):before { content: "GROUP ID:"; }
+      td.proposalsummary :nth-of-type(2):before { content: "PROJECT TITLE:"; }
+      td.proposalsummary:nth-of-type(3):before { content: "DATE:"; }
+      td.proposalsummary:nth-of-type(4):before { content: "STATUS:"; }
+      td.proposalsummary:nth-of-type(5):before { content: "PROPOSAL:"; }
+      td.proposalsummary:nth-of-type(6):before { content: "THESIS:"; }
+    
+    
+     td.pendingproposal:nth-of-type(1):before { content: "GROUP ID:"; }
+     td.pendingproposal :nth-of-type(2):before { content: "PROJECT TITLE:"; }
+     td.pendingproposal:nth-of-type(3):before { content: "DATE:"; }
+     td.pendingproposal:nth-of-type(4):before { content: "DETAILS:"; }
+     td.pendingproposal:nth-of-type(5):before { content: "COMMENTS:"; }
+    td.pendingproposal:nth-of-type(6):before { content: "ACTION:"; }
+
+  
+  
+  
+    }
+  
+
+
+
+
+
+
+
+  
+
+
+/* =========== */
+@media only screen and (max-width:700px)and (min-width:0px){
+        .fyp-idea-header{
+        /* display: flow-root; */
+        flex-direction: column;
+        align-items: start;
+        font-size: small;
+        justify-content: start;
+        text-align: start;
+     
+
+        }
+}
+
+/* button-add-idea-div    */
+.button-add-idea-div{
+display: flex;
+flex-direction: row;
+justify-content: end;
+align-items: flex-end;
+}
+
+.btn-add-idea{
+    margin: 10px;
+    background-color: #d2e2f5;
+    width: auto;
+border: none;
+border-radius: 15px;
+padding: 10px;
+font-size: small;
+}
+
+.btn-view-details{
+  background-color: #d2e2f5;
+  width: auto;
+border: none;
+border-radius: 15px;
+padding: 10px;
+font-size: small;
+}
+
+
+/* =================== */
+.add-idea-div{
+    margin: auto;
+}
+
+.add-idea-div div{
+    margin-bottom: 15px;
+}
+
+.add-fyp-idea-header{
+    padding: 40px;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.btn-submit-idea{
+    background-color: #0DA049;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+}
+
+
+/* project summary supervisor */
+
+
+.project-summary-data{
+    text-align: center;
+    font-size: small;
+    padding: 8px;
+}
+
+.btn-view-details{
+    background-color: #d2e2f5;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+
+/* pending prosoals supervisor */
+.action-dropdown{
+    font-size: small !important;
+}
+
+/* assign evaluators */
+.assign-evaluators-div div div{
+    font-size: small;
+    font-weight: bold;
+}
+
+.btn-add-evaluators{
+    background-color: #ffffff;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+
+}
+
+.add-evaluators-div{
+    margin: 100px;
+}
+
+/* fyp groups */
+.fyp-status-div{
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+justify-content: end;
+align-items: flex-end;
+}
+
+.fyp-status-div span{
+    color: red;
+}
+
+.file-input{
+}
+
+.custom-file-upload {
+}
+/* [type='file']{
+
+} */
+
+
+.full-width{
+width:100%;
+
+}
+
+/* ------------------- */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
